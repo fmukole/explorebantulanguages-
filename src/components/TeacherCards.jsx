@@ -36,7 +36,7 @@ export default function TeacherCards() {
     <section ref={ref} className="bg-background py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
         <SectionHeader eyebrow="Meet your teachers" title="The people" italic="behind the languages." />
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {teachers.map((t) => (
             <article key={t.name} className="teacher-card overflow-hidden rounded-5xl border border-divider bg-surface shadow-sm">
               <Portrait teacher={t} />

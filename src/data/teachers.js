@@ -3,10 +3,17 @@
 export const teachers = [
   {
     name: 'Mr Madinda N. Kanyiki',
-    role: 'Founder, Explore Bantu Languages',
+    role: 'Founder and teacher',
     note: 'Independent Linguist and Language Researcher',
     photo: '/images/instructor-portrait.jpg',
     languages: ['swahili', 'french'],
+  },
+  {
+    name: 'Albert Kamayi',
+    role: 'Teacher',
+    note: '',
+    photo: null,
+    languages: ['french'],
   },
   {
     name: 'Fwamba Mukole',

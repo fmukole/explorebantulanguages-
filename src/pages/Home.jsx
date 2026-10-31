@@ -11,6 +11,7 @@ import Flag from '../components/Flag'
 import Testimonials from '../components/Testimonials'
 import WorldMap from '../components/WorldMap'
 import TeacherCards from '../components/TeacherCards'
+import Research from '../components/Research'
 import PhotoTile from '../components/PhotoTile'
 import BlogCard from '../components/BlogCard'
 import CTABanner from '../components/CTABanner'
@@ -232,6 +233,7 @@ export default function Home() {
       <Testimonials />
       <Cultures />
       <WorldMap />
+      <Research />
       <TeacherCards />
       <LatestPosts />
       <CTABanner />

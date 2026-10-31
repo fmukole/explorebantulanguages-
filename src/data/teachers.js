@@ -12,14 +12,14 @@ export const teachers = [
     name: 'Albert Kamayi',
     role: 'Teacher',
     note: '',
-    photo: null,
+    photo: '/images/teachers/albert-kamayi.png',
     languages: ['french'],
   },
   {
     name: 'Fwamba Mukole',
     role: 'Teacher',
     note: '',
-    photo: null,
+    photo: '/images/teachers/fwamba-mukole.jpg',
     languages: ['english', 'portuguese'],
   },
   {

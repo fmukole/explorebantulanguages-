@@ -11,6 +11,17 @@ export const languages = [
     greeting: 'Jambo!',
     family: 'Bantu language (Niger-Congo)',
     color: '#2E8B57',
+    levelVideos: false,
+    regionMap: true,
+    history: {
+      title: 'A short history of Swahili',
+      paragraphs: [
+        'Swahili began on the East African coast as a Bantu language. Its name comes from the Arabic word sawahil, meaning coasts. Centuries of trade across the Indian Ocean brought Arabic, Persian and later Portuguese and English words into its vocabulary, while its grammar stayed firmly Bantu.',
+        'Port towns such as Kilwa, Mombasa, Lamu and Zanzibar were centres of Swahili culture, and the language was long written in Arabic script. Some of the oldest surviving Swahili manuscripts are poems.',
+        'In the nineteenth century, caravan routes carried the language inland to the Great Lakes and eastern Congo, where it became a language between peoples who did not share a mother tongue.',
+        'In the twentieth century, schools and administrations in Tanzania and Kenya adopted a standard form based on the Zanzibar dialect. After independence, Swahili became a national language in Tanzania and Kenya. Today it is an official language of the African Union, and the United Nations marks World Kiswahili Language Day on 7 July.',
+      ],
+    },
     tagline: 'The language of the East African coast, the Great Lakes and a continent of traders.',
     intro:
       'Swahili is a Bantu language that grew along the East African coast and spread inland through trade. Today it is a working language across Tanzania and Kenya, and widely used in Uganda, Rwanda, Burundi and eastern DR Congo. It is also an official language of the African Union.',
@@ -20,6 +31,7 @@ export const languages = [
       { name: 'DR Congo', id: 180, flag: flag('cd'), note: 'One of the national languages, strongest in the east and in Katanga.' },
       { name: 'Uganda', id: 800, flag: flag('ug'), note: 'An official language and a language of trade and the armed forces.' },
       { name: 'Rwanda', id: 646, flag: flag('rw'), note: 'Spoken in towns and markets alongside Kinyarwanda, French and English.' },
+      { name: 'Burundi', id: 108, flag: flag('bi'), note: 'Used as a language of trade and in the towns, alongside Kirundi and French.' },
     ],
     culture: [
       { title: 'Methali (proverbs)', text: 'Swahili speech is full of proverbs. "Haba na haba hujaza kibaba" means little by little fills the measure.' },
@@ -43,12 +55,6 @@ export const languages = [
         goal: 'Greet people, introduce yourself and manage everyday situations such as markets and transport.',
         topics: ['Greetings and polite forms', 'Pronunciation and the five vowels', 'Introducing yourself and your family', 'Numbers, days and telling the time', 'Present tense with the na marker', 'First noun classes (m-/wa-, ki-/vi-)', 'Food, shopping and bargaining'],
         canDo: ['Hold a simple conversation of a few minutes', 'Ask prices and directions', 'Read short signs and menus'],
-        course: {
-          name: 'Full Time Beginner Course',
-          schedule: 'Three months, Monday to Friday, 8AM to 3PM',
-          rates: '$30 per person per hour for groups of 1 to 4, and $27 per person per hour for groups of 5 to 10. One hour a day is deducted from the course day for lunch and breaks.',
-          note: 'Quoted in US dollars. Rand amounts are an estimate because the exchange rate may change by the time you pay.',
-        },
       },
       intermediate: {
         goal: 'Tell stories, talk about the past and future and follow conversations at natural speed.',

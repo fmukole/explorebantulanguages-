@@ -6,7 +6,7 @@ export const teachers = [
     role: 'Founder and teacher',
     note: 'Independent Linguist and Language Researcher',
     photo: '/images/instructor-portrait.jpg',
-    languages: ['swahili', 'french'],
+    languages: ['swahili', 'english'],
   },
   {
     name: 'Albert Kamayi',
@@ -20,7 +20,7 @@ export const teachers = [
     role: 'Teacher',
     note: '',
     photo: null,
-    languages: ['french', 'portuguese'],
+    languages: ['english', 'portuguese'],
   },
   {
     name: 'Joyce Marupula',

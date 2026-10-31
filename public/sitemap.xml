@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.com/</loc></url>
+  <url><loc>https://example.com/languages</loc></url>
+  <url><loc>https://example.com/about</loc></url>
+  <url><loc>https://example.com/blog</loc></url>
+  <url><loc>https://example.com/contact</loc></url>
+  <url><loc>https://example.com/privacy</loc></url>
+  <url><loc>https://example.com/terms</loc></url>
+  <url><loc>https://example.com/languages/swahili</loc></url>
+  <url><loc>https://example.com/languages/french</loc></url>
+  <url><loc>https://example.com/languages/zulu</loc></url>
+  <url><loc>https://example.com/languages/xhosa</loc></url>
+  <url><loc>https://example.com/languages/portuguese</loc></url>
+  <url><loc>https://example.com/blog/noun-classes-in-plain-english</loc></url>
+  <url><loc>https://example.com/blog/click-consonants-zulu-xhosa</loc></url>
+  <url><loc>https://example.com/blog/french-or-portuguese-in-africa</loc></url>
+  <url><loc>https://example.com/blog/swahili-phrases-first-day</loc></url>
+  <url><loc>https://example.com/blog/sawubona-i-see-you</loc></url>
+</urlset>

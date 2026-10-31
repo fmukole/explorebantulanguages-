@@ -63,18 +63,6 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-background py-24 sm:py-32">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 sm:px-10 lg:grid-cols-2 lg:px-16">
-          <div>
-            <SectionHeader eyebrow="Research" title="The unity and diversity" italic="of Bantu languages." />
-            <p className="mt-6 text-base leading-relaxed text-muted sm:text-lg">
-              {instructor.name} presented “{instructor.seminar.title}” at the {instructor.seminar.series}, on {instructor.seminar.date} in {instructor.seminar.venue}. That research shapes how our courses compare and connect the languages we teach.
-            </p>
-          </div>
-          <img src="/images/seminar-poster.jpg" alt="Poster for the UCT SLL Research Seminar Series talk on the unity and diversity of Bantu languages" loading="lazy" className="mx-auto max-h-[560px] w-auto rounded-3xl shadow-xl" />
-        </div>
-      </section>
-
       <section className="bg-surface py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
           <SectionHeader eyebrow="How we teach" title="Four" italic="principles." />

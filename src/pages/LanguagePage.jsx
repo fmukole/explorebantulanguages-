@@ -7,7 +7,7 @@ import LevelColumns from '../components/LevelColumns'
 import VideoSlot from '../components/VideoSlot'
 import PhotoTile from '../components/PhotoTile'
 import RegionMap from '../components/RegionMap'
-import FrancophoneMap from '../components/FrancophoneMap'
+import WorldLanguageMap from '../components/WorldLanguageMap'
 import SouthernAfricaMap from '../components/SouthernAfricaMap'
 import Flag from '../components/Flag'
 import CTABanner from '../components/CTABanner'
@@ -97,7 +97,15 @@ export default function LanguagePage() {
               </div>
             ))}
           </div>
-          {lang.history ? (
+          {lang.history && lang.historyNoPhoto ? (
+            <div className="mt-8 rounded-4xl border border-divider bg-surface p-8 sm:p-10 lg:p-12">
+              <p className="font-mono text-xs uppercase tracking-[0.18em] text-primary">History</p>
+              <h3 className="mt-3 font-display text-3xl font-bold tracking-tight">{lang.history.title}</h3>
+              <div className="mt-6 max-w-3xl space-y-4 text-base leading-relaxed text-ink/80 sm:text-lg">
+                {lang.history.paragraphs.map((t) => (<p key={t.slice(0, 24)}>{t}</p>))}
+              </div>
+            </div>
+          ) : lang.history ? (
             <div className="mt-8 grid items-stretch gap-8 lg:grid-cols-2">
               <PhotoTile photo={lang.photos[0]} ratio="aspect-[4/5] lg:aspect-auto" className="min-h-[360px]" />
               <div className="rounded-4xl border border-divider bg-surface p-8 sm:p-10">
@@ -114,7 +122,7 @@ export default function LanguagePage() {
             </div>
           )}
           {lang.regionMap === true && <RegionMap language={lang} />}
-          {lang.regionMap === 'french' && <FrancophoneMap color={lang.color} />}
+          {['french', 'portuguese', 'english'].includes(lang.regionMap) && <WorldLanguageMap kind={lang.regionMap} color={lang.color} />}
         </div>
       </section>
 

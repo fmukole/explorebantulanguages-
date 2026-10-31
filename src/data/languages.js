@@ -277,6 +277,8 @@ export const languages = [
     greeting: 'Olá!',
     family: 'Romance language (Indo-European), an official language in Angola and Mozambique',
     color: '#E26A1B',
+    levelVideos: false,
+    regionMap: 'portuguese',
     tagline: 'From Lisbon and Rio to Luanda and Maputo, a language that links four continents.',
     intro:
       'Portuguese is a Romance language and an official language of Portugal, Brazil, Angola, Mozambique and Cabo Verde, among others. It is widely used in southern Africa, which makes it valuable for work and family connections across Angola, Mozambique and the Portuguese-speaking communities in South Africa. It is not a Bantu language, but it lives alongside many of them.',
@@ -334,6 +336,19 @@ export const languages = [
     greeting: 'Hello!',
     family: 'Germanic language (Indo-European), an official language across Africa',
     color: '#2D5FA8',
+    levelVideos: false,
+    regionMap: 'english',
+    historyNoPhoto: true,
+    history: {
+      title: 'A short history of English',
+      paragraphs: [
+        'English began as a Germanic language. It was brought to Britain in the fifth century by the Angles, Saxons and Jutes, and its everyday core is still Germanic: words like house, water, mother and drink.',
+        'Then came 1066. The Normans, who spoke a form of French, conquered England, and for around three centuries French was the language of the royal court, the law and government. English did not disappear. It was the language of ordinary people, but it took in thousands of French words.',
+        'That is why English has pairs such as cow and beef, pig and pork, sheep and mutton: the animals kept the English name, and the meat on the table got the French one. Words like government, justice, court, army, nation, important and possible all came from French.',
+        'This makes English and French close cousins in vocabulary. English is a Germanic language rather than a Romance one, but a large share of its words come from French and Latin. If you know French, a great many English words are already familiar, and the other way round. The spelling is often the same, the pronunciation is different, and that is the part to practise.',
+        'In later centuries the British Empire, and then the United States, carried English across the world. Today it is the shared language of business, science and the internet, and for many Africans it is the language that connects people who do not share a mother tongue.',
+      ],
+    },
     tagline: 'The language many Africans share across borders, in business, school and the internet.',
     intro:
       'English is a Germanic language that is now spoken as a first or second language on every continent. In Africa it is an official language in South Africa, Ghana, Kenya, Uganda and many other countries, and it is often the shared language between people who speak different mother tongues. It is not a Bantu language, but it sits alongside many of them in daily life. Our English courses are built for speakers of African languages as well as newcomers to Cape Town.',

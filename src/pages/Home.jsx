@@ -8,7 +8,9 @@ import GreetingsCloud from '../components/GreetingsCloud'
 import SectionHeader from '../components/SectionHeader'
 import CountUp from '../components/CountUp'
 import Flag from '../components/Flag'
-import VideoSlot from '../components/VideoSlot'
+import Testimonials from '../components/Testimonials'
+import WorldMap from '../components/WorldMap'
+import TeacherCards from '../components/TeacherCards'
 import PhotoTile from '../components/PhotoTile'
 import BlogCard from '../components/BlogCard'
 import CTABanner from '../components/CTABanner'
@@ -114,14 +116,15 @@ function Pillars() {
     { n: 6, label: 'Languages', sub: 'Swahili, French, Zulu, Xhosa, Portuguese, English' },
     { n: 3, label: 'Levels each', sub: 'Beginner, Intermediate and Advanced' },
     { n: 18, label: 'Courses', sub: 'Six languages across three levels' },
+    { n: 1278, label: 'Students to date', sub: 'Learners taught so far', separator: true },
   ]
   return (
     <section className="grid-bg relative bg-surface py-20 sm:py-28">
-      <div className="mx-auto grid max-w-7xl gap-10 px-6 sm:px-10 md:grid-cols-3 lg:px-16">
+      <div className="mx-auto grid max-w-7xl gap-10 px-6 sm:px-10 sm:grid-cols-2 lg:grid-cols-4 lg:px-16">
         {stats.map((s) => (
-          <div key={s.label} className="text-center md:text-left">
-            <p className="gradient-text font-display text-7xl font-extrabold tracking-tighter sm:text-8xl"><CountUp end={s.n} /></p>
-            <div className="mx-auto my-3 h-px w-24 overflow-hidden md:mx-0"><div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent" style={{ animation: 'pillar-sweep 3s ease-in-out infinite' }} /></div>
+          <div key={s.label} className="text-center sm:text-left">
+            <p className="gradient-text font-display text-7xl font-extrabold tracking-tighter sm:text-8xl"><CountUp end={s.n} separator={s.separator} /></p>
+            <div className="mx-auto my-3 h-px w-24 overflow-hidden sm:mx-0"><div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent" style={{ animation: 'pillar-sweep 3s ease-in-out infinite' }} /></div>
             <p className="font-display text-xl font-bold">{s.label}</p>
             <p className="mt-1 text-sm text-muted">{s.sub}</p>
           </div>
@@ -174,28 +177,6 @@ function Protocol() {
   )
 }
 
-function Videos() {
-  return (
-    <section className="bg-background py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
-        <SectionHeader eyebrow="Watch and listen" title="Short videos," italic="long memories." text="Short clips for every language and level. Play the featured clip, or open a language to see its video slots." />
-        <div className="mt-14 grid gap-6 lg:grid-cols-3">
-          <div className="lg:row-span-2">
-            <VideoSlot aspect="aspect-[9/14] lg:aspect-[9/16]" title="From the lecture hall: Bantu languages seminar" label="Seminar clip" src="/videos/intro-lesson.mp4" poster="/images/intro-lesson-poster.jpg" color="#C8202B" note="UCT SLL Research Seminar Series" />
-          </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:col-span-2">
-            {languages.map((l) => (
-              <Link key={l.slug} to={`/languages/${l.slug}`} className="block">
-                <VideoSlot title={l.videos[0].title} color={l.color} poster={l.photos[0].src} src={l.videos[0].src} youtube={l.videos[0].youtube} note={l.name} />
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
 function Cultures() {
   const photos = languages.flatMap((l) => l.photos)
   const flags = Array.from(new Map(languages.flatMap((l) => l.countries).map((c) => [c.name, c])).values())
@@ -222,7 +203,7 @@ function Cultures() {
 
 function LatestPosts() {
   return (
-    <section className="bg-background py-24 sm:py-32">
+    <section className="bg-surface py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeader eyebrow="From the blog" title="Tips, phrases and" italic="culture." />
@@ -248,8 +229,10 @@ export default function Home() {
       <LanguageGrid />
       <Pillars />
       <Protocol />
-      <Videos />
+      <Testimonials />
       <Cultures />
+      <WorldMap />
+      <TeacherCards />
       <LatestPosts />
       <CTABanner />
     </>

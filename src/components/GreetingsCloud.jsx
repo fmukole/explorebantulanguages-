@@ -2,15 +2,15 @@
 const WORDS = [
   { t: 'Jambo', c: '#2E8B57', l: '6%', d: '0s', s: 'text-3xl' },
   { t: 'Sawubona', c: '#E8A90C', l: '22%', d: '1.8s', s: 'text-2xl' },
-  { t: 'Bonjour', c: '#7FA8E6', l: '40%', d: '3.4s', s: 'text-3xl' },
+  { t: 'Bonjour', c: '#B79BE0', l: '40%', d: '3.4s', s: 'text-3xl' },
   { t: 'Molo', c: '#F0707A', l: '58%', d: '0.9s', s: 'text-2xl' },
   { t: 'Olá', c: '#F59A57', l: '74%', d: '2.7s', s: 'text-3xl' },
   { t: 'Habari', c: '#2E8B57', l: '88%', d: '4.5s', s: 'text-2xl' },
   { t: 'Molweni', c: '#F0707A', l: '14%', d: '5.4s', s: 'text-xl' },
   { t: 'Karibu', c: '#E8A90C', l: '50%', d: '6.3s', s: 'text-xl' },
   { t: 'Bom dia', c: '#F59A57', l: '82%', d: '7.2s', s: 'text-xl' },
-  { t: 'Merci', c: '#7FA8E6', l: '30%', d: '8s', s: 'text-xl' },
-  { t: 'Hello', c: '#5CC6CF', l: '66%', d: '5.9s', s: 'text-2xl' },
+  { t: 'Merci', c: '#B79BE0', l: '30%', d: '8s', s: 'text-xl' },
+  { t: 'Hello', c: '#7FA8E6', l: '66%', d: '5.9s', s: 'text-2xl' },
 ]
 
 export default function GreetingsCloud({ className = '' }) {

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-export default function CountUp({ end, suffix = '', duration = 1800 }) {
+export default function CountUp({ end, suffix = '', duration = 1800, separator = false }) {
   const [value, setValue] = useState(0)
   const ref = useRef(null)
   const started = useRef(false)
@@ -28,7 +28,7 @@ export default function CountUp({ end, suffix = '', duration = 1800 }) {
 
   return (
     <span ref={ref} className="tabular-nums">
-      {value}
+      {separator ? value.toLocaleString('en-US') : value}
       {suffix}
     </span>
   )

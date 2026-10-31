@@ -63,6 +63,9 @@
     height: 6px;
     background: linear-gradient(90deg, #2E8B57 0 20%, #E8A90C 20% 40%, #C8202B 40% 60%, #2D5FA8 60% 80%, #0E1A33 80% 100%);
   }
+  .testimonial-track { animation: marquee-right 45s linear infinite; }
+  .testimonial-track:hover { animation-play-state: paused; }
+  @keyframes marquee-right { from { transform: translateX(-50%); } to { transform: translateX(0); } }
   .text-balance { text-wrap: balance; }
   .scrollbar-hide::-webkit-scrollbar { display: none; }
 }

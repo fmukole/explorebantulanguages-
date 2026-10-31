@@ -15,11 +15,11 @@ export const languages = [
     intro:
       'Swahili is a Bantu language that grew along the East African coast and spread inland through trade. Today it is a working language across Tanzania and Kenya, and widely used in Uganda, Rwanda, Burundi and eastern DR Congo. It is also an official language of the African Union.',
     countries: [
-      { name: 'Tanzania', flag: flag('tz'), note: 'National language and the heart of Swahili culture, from Zanzibar to Dodoma.' },
-      { name: 'Kenya', flag: flag('ke'), note: 'National and official language, spoken from Mombasa to Nairobi.' },
-      { name: 'DR Congo', flag: flag('cd'), note: 'One of the national languages, strongest in the east and in Katanga.' },
-      { name: 'Uganda', flag: flag('ug'), note: 'An official language and a language of trade and the armed forces.' },
-      { name: 'Rwanda', flag: flag('rw'), note: 'Spoken in towns and markets alongside Kinyarwanda, French and English.' },
+      { name: 'Tanzania', id: 834, flag: flag('tz'), note: 'National language and the heart of Swahili culture, from Zanzibar to Dodoma.' },
+      { name: 'Kenya', id: 404, flag: flag('ke'), note: 'National and official language, spoken from Mombasa to Nairobi.' },
+      { name: 'DR Congo', id: 180, flag: flag('cd'), note: 'One of the national languages, strongest in the east and in Katanga.' },
+      { name: 'Uganda', id: 800, flag: flag('ug'), note: 'An official language and a language of trade and the armed forces.' },
+      { name: 'Rwanda', id: 646, flag: flag('rw'), note: 'Spoken in towns and markets alongside Kinyarwanda, French and English.' },
     ],
     culture: [
       { title: 'Methali (proverbs)', text: 'Swahili speech is full of proverbs. "Haba na haba hujaza kibaba" means little by little fills the measure.' },
@@ -73,16 +73,16 @@ export const languages = [
     native: 'Français',
     greeting: 'Bonjour!',
     family: 'Romance language (Indo-European), widely spoken in Africa',
-    color: '#2D5FA8',
+    color: '#7A4FB5',
     tagline: 'From Paris cafés to Kinshasa and Dakar, French connects more of Africa than any other European language.',
     intro:
       'French is a Romance language spoken on five continents. A large share of the world’s French speakers now live in Africa, and French is an official or working language in many countries from Senegal to DR Congo. It is not a Bantu language, but it is an essential one for anyone working across Central and West Africa.',
     countries: [
-      { name: 'France', flag: flag('fr'), note: 'The language’s home, with strong regional food, film and literary traditions.' },
-      { name: 'DR Congo', flag: flag('cd'), note: 'French is the official language and the language of schools and government.' },
-      { name: 'Senegal', flag: flag('sn'), note: 'French is official, used alongside Wolof in daily life.' },
-      { name: "Côte d'Ivoire", flag: flag('ci'), note: 'French is the official language and a lingua franca among many communities.' },
-      { name: 'Cameroon', flag: flag('cm'), note: 'French and English are both official languages.' },
+      { name: 'France', id: 250, flag: flag('fr'), note: 'The language’s home, with strong regional food, film and literary traditions.' },
+      { name: 'DR Congo', id: 180, flag: flag('cd'), note: 'French is the official language and the language of schools and government.' },
+      { name: 'Senegal', id: 686, flag: flag('sn'), note: 'French is official, used alongside Wolof in daily life.' },
+      { name: "Côte d'Ivoire", id: 384, flag: flag('ci'), note: 'French is the official language and a lingua franca among many communities.' },
+      { name: 'Cameroon', id: 120, flag: flag('cm'), note: 'French and English are both official languages.' },
     ],
     culture: [
       { title: 'The café', text: 'A coffee in France is rarely just a coffee. It is a reason to sit, talk and watch the street.' },
@@ -135,7 +135,7 @@ export const languages = [
     intro:
       'isiZulu is a Bantu language of the Nguni branch, spoken mainly in KwaZulu-Natal and across Gauteng and other provinces of South Africa. It is one of South Africa’s eleven official languages and is closely related to isiXhosa, siSwati and isiNdebele.',
     countries: [
-      { name: 'South Africa', flag: flag('za'), note: 'Home to the vast majority of isiZulu speakers, especially in KwaZulu-Natal and Gauteng.' },
+      { name: 'South Africa', id: 710, flag: flag('za'), note: 'Home to the vast majority of isiZulu speakers, especially in KwaZulu-Natal and Gauteng.' },
     ],
     culture: [
       { title: 'Sawubona', text: 'The greeting literally means “I see you”, and the reply Yebo, sawubona carries the same meaning back.' },
@@ -187,7 +187,7 @@ export const languages = [
     intro:
       'isiXhosa is a Bantu language of the Nguni branch, spoken mainly in the Eastern and Western Cape. It is one of South Africa’s official languages and is the language of Cape Town’s large Xhosa-speaking communities, which makes it especially useful if you live or work in the city.',
     countries: [
-      { name: 'South Africa', flag: flag('za'), note: 'Strongest in the Eastern Cape and widely heard across the Western Cape, including Cape Town.' },
+      { name: 'South Africa', id: 710, flag: flag('za'), note: 'Strongest in the Eastern Cape and widely heard across the Western Cape, including Cape Town.' },
     ],
     culture: [
       { title: 'Clicks', text: 'isiXhosa is known for its click consonants, written c, q and x, which learners can practise from the first lesson.' },
@@ -239,11 +239,11 @@ export const languages = [
     intro:
       'Portuguese is a Romance language and an official language of Portugal, Brazil, Angola, Mozambique and Cabo Verde, among others. It is widely used in southern Africa, which makes it valuable for work and family connections across Angola, Mozambique and the Portuguese-speaking communities in South Africa. It is not a Bantu language, but it lives alongside many of them.',
     countries: [
-      { name: 'Portugal', flag: flag('pt'), note: 'The European homeland of the language, known for fado, tiles and the sea.' },
-      { name: 'Brazil', flag: flag('br'), note: 'The largest Portuguese-speaking country, with its own accent, slang and music.' },
-      { name: 'Angola', flag: flag('ao'), note: 'Portuguese is the official language, spoken alongside Umbundu, Kimbundu and Kikongo.' },
-      { name: 'Mozambique', flag: flag('mz'), note: 'Portuguese is official and spoken alongside many Bantu languages.' },
-      { name: 'Cabo Verde', flag: flag('cv'), note: 'Portuguese is official, with Cape Verdean Creole spoken in daily life.' },
+      { name: 'Portugal', id: 620, flag: flag('pt'), note: 'The European homeland of the language, known for fado, tiles and the sea.' },
+      { name: 'Brazil', id: 76, flag: flag('br'), note: 'The largest Portuguese-speaking country, with its own accent, slang and music.' },
+      { name: 'Angola', id: 24, flag: flag('ao'), note: 'Portuguese is the official language, spoken alongside Umbundu, Kimbundu and Kikongo.' },
+      { name: 'Mozambique', id: 508, flag: flag('mz'), note: 'Portuguese is official and spoken alongside many Bantu languages.' },
+      { name: 'Cabo Verde', id: 132, lonlat: [-23.6, 15.1], flag: flag('cv'), note: 'Portuguese is official, with Cape Verdean Creole spoken in daily life.' },
     ],
     culture: [
       { title: 'Fado', text: 'Portugal’s melancholy, poetic music, often sung in small intimate venues.' },
@@ -291,19 +291,18 @@ export const languages = [
     native: 'English',
     greeting: 'Hello!',
     family: 'Germanic language (Indo-European), an official language across Africa',
-    color: '#0E7C86',
+    color: '#2D5FA8',
     tagline: 'The language many Africans share across borders, in business, school and the internet.',
     intro:
-      'English is a Germanic language that is now spoken as a first or second language on every continent. In Africa it is an official language in South Africa, Nigeria, Ghana, Kenya, Uganda and many other countries, and it is often the shared language between people who speak different mother tongues. It is not a Bantu language, but it sits alongside many of them in daily life. Our English courses are built for speakers of African languages as well as newcomers to Cape Town.',
+      'English is a Germanic language that is now spoken as a first or second language on every continent. In Africa it is an official language in South Africa, Ghana, Kenya, Uganda and many other countries, and it is often the shared language between people who speak different mother tongues. It is not a Bantu language, but it sits alongside many of them in daily life. Our English courses are built for speakers of African languages as well as newcomers to Cape Town.',
     countries: [
-      { name: 'United Kingdom', flag: flag('gb'), note: 'The historical home of the language, from London to Edinburgh.' },
-      { name: 'United States', flag: flag('us'), note: 'The largest English-speaking country, with its own spelling, accent and slang.' },
-      { name: 'South Africa', flag: flag('za'), note: 'English is one of eleven official languages and the common language of business and government.' },
-      { name: 'Nigeria', flag: flag('ng'), note: 'English is the official language, spoken alongside Hausa, Yoruba, Igbo and Nigerian Pidgin.' },
-      { name: 'Australia', flag: flag('au'), note: 'A major English-speaking country with a distinctive accent and a large international student community.' },
+      { name: 'United Kingdom', id: 826, flag: flag('gb'), note: 'The historical home of the language, from London to Edinburgh.' },
+      { name: 'United States', id: 840, flag: flag('us'), note: 'The largest English-speaking country, with its own spelling, accent and slang.' },
+      { name: 'South Africa', id: 710, flag: flag('za'), note: 'English is one of eleven official languages and the common language of business and government.' },
+      { name: 'Australia', id: 36, flag: flag('au'), note: 'A major English-speaking country with a distinctive accent and a large international student community.' },
     ],
     culture: [
-      { title: 'Many Englishes', text: 'British, American, South African and Nigerian English differ in accent, vocabulary and spelling. We teach a clear international standard and help you recognise the others.' },
+      { title: 'Many Englishes', text: 'British, American, South African and Australian English differ in accent, vocabulary and spelling. We teach a clear international standard and help you recognise the others.' },
       { title: 'Stress and rhythm', text: 'English is a stress-timed language. Learning where to put the stress often helps more than perfecting single sounds.' },
       { title: 'Idiom and humour', text: 'Phrases such as "it is raining cats and dogs" cannot be translated word for word. Learning idioms is learning how English speakers joke and think.' },
       { title: 'English at work', text: 'Emails, interviews and meetings follow habits of politeness that differ from many African languages, and we practise them in realistic situations.' },
@@ -312,7 +311,6 @@ export const languages = [
       { src: '/images/culture/london-tower-bridge.jpg', alt: 'Tower Bridge crossing the River Thames in London', caption: 'Tower Bridge, London, United Kingdom', credit: 'Marco Chilese', creditUrl: 'https://unsplash.com/photos/tower-bridge-london-IZvg-KtGolo' },
       { src: '/images/culture/cape-town-table-mountain.jpg', alt: 'Table Mountain looming over the city of Cape Town', caption: 'Table Mountain and Cape Town, South Africa', credit: 'Vimal Joseph', creditUrl: 'https://unsplash.com/photos/table-mountain-looms-over-the-city-of-cape-town-tRPvXfu5Xf0' },
       { src: '/images/culture/new-york-street.jpg', alt: 'A street view of buildings in New York City', caption: 'A street in New York City, United States', credit: 'Jacqueline Brandwayn', creditUrl: 'https://unsplash.com/photos/street-view-of-new-york-city-buildings-PR3m2XM5l8w' },
-      { src: '/images/culture/lagos-lekki-bridge.jpg', alt: 'An aerial view of the Lekki-Ikoyi Link Bridge in Lagos', caption: 'Lekki-Ikoyi Link Bridge, Lagos, Nigeria', credit: 'Tunde Buremo', creditUrl: 'https://unsplash.com/photos/an-aerial-view-of-a-busy-city-n8DxalbQBic' },
     ],
     phrases: [
       { text: 'Hello, how are you?', meaning: 'A friendly greeting', reply: 'Fine, thank you. And you?' },

@@ -9,11 +9,11 @@ import { languages, levelMeta } from '../data/languages'
 export default function Languages() {
   return (
     <>
-      <Seo title="Languages" description="Swahili, French, Zulu, Xhosa and Portuguese, each with Beginner, Intermediate and Advanced courses." />
+      <Seo title="Languages" description="Swahili, French, Zulu, Xhosa, Portuguese and English, each with Beginner, Intermediate and Advanced courses." />
       <PageHero
         eyebrow="Our languages"
-        title="Five languages."
-        italic="Fifteen courses."
+        title="Six languages."
+        italic="Eighteen courses."
         text="Pick a language to see its three levels side by side, its short videos, and the countries and cultures behind it."
         image="/images/culture/stone-town-market.jpg"
         crumbs={[{ label: 'Languages' }]}

@@ -285,6 +285,65 @@ export const languages = [
       { title: 'Ordering at a restaurant', length: 'Short clip', youtube: null, src: null },
     ],
   },
+  {
+    slug: 'english',
+    name: 'English',
+    native: 'English',
+    greeting: 'Hello!',
+    family: 'Germanic language (Indo-European), an official language across Africa',
+    color: '#0E7C86',
+    tagline: 'The language many Africans share across borders, in business, school and the internet.',
+    intro:
+      'English is a Germanic language that is now spoken as a first or second language on every continent. In Africa it is an official language in South Africa, Nigeria, Ghana, Kenya, Uganda and many other countries, and it is often the shared language between people who speak different mother tongues. It is not a Bantu language, but it sits alongside many of them in daily life. Our English courses are built for speakers of African languages as well as newcomers to Cape Town.',
+    countries: [
+      { name: 'United Kingdom', flag: flag('gb'), note: 'The historical home of the language, from London to Edinburgh.' },
+      { name: 'United States', flag: flag('us'), note: 'The largest English-speaking country, with its own spelling, accent and slang.' },
+      { name: 'South Africa', flag: flag('za'), note: 'English is one of eleven official languages and the common language of business and government.' },
+      { name: 'Nigeria', flag: flag('ng'), note: 'English is the official language, spoken alongside Hausa, Yoruba, Igbo and Nigerian Pidgin.' },
+      { name: 'Australia', flag: flag('au'), note: 'A major English-speaking country with a distinctive accent and a large international student community.' },
+    ],
+    culture: [
+      { title: 'Many Englishes', text: 'British, American, South African and Nigerian English differ in accent, vocabulary and spelling. We teach a clear international standard and help you recognise the others.' },
+      { title: 'Stress and rhythm', text: 'English is a stress-timed language. Learning where to put the stress often helps more than perfecting single sounds.' },
+      { title: 'Idiom and humour', text: 'Phrases such as "it is raining cats and dogs" cannot be translated word for word. Learning idioms is learning how English speakers joke and think.' },
+      { title: 'English at work', text: 'Emails, interviews and meetings follow habits of politeness that differ from many African languages, and we practise them in realistic situations.' },
+    ],
+    photos: [
+      { src: '/images/culture/london-tower-bridge.jpg', alt: 'Tower Bridge crossing the River Thames in London', caption: 'Tower Bridge, London, United Kingdom', credit: 'Marco Chilese', creditUrl: 'https://unsplash.com/photos/tower-bridge-london-IZvg-KtGolo' },
+      { src: '/images/culture/cape-town-table-mountain.jpg', alt: 'Table Mountain looming over the city of Cape Town', caption: 'Table Mountain and Cape Town, South Africa', credit: 'Vimal Joseph', creditUrl: 'https://unsplash.com/photos/table-mountain-looms-over-the-city-of-cape-town-tRPvXfu5Xf0' },
+      { src: '/images/culture/new-york-street.jpg', alt: 'A street view of buildings in New York City', caption: 'A street in New York City, United States', credit: 'Jacqueline Brandwayn', creditUrl: 'https://unsplash.com/photos/street-view-of-new-york-city-buildings-PR3m2XM5l8w' },
+      { src: '/images/culture/lagos-lekki-bridge.jpg', alt: 'An aerial view of the Lekki-Ikoyi Link Bridge in Lagos', caption: 'Lekki-Ikoyi Link Bridge, Lagos, Nigeria', credit: 'Tunde Buremo', creditUrl: 'https://unsplash.com/photos/an-aerial-view-of-a-busy-city-n8DxalbQBic' },
+    ],
+    phrases: [
+      { text: 'Hello, how are you?', meaning: 'A friendly greeting', reply: 'Fine, thank you. And you?' },
+      { text: 'Nice to meet you', meaning: 'Said when meeting someone new', reply: 'Nice to meet you too' },
+      { text: 'Could you repeat that, please?', meaning: 'Asking someone to say it again', reply: 'Of course' },
+      { text: 'Thank you very much', meaning: 'Strong thanks', reply: "You're welcome" },
+      { text: 'See you later', meaning: 'An informal goodbye', reply: 'Take care' },
+    ],
+    levels: {
+      beginner: {
+        goal: 'Introduce yourself, understand simple English and handle everyday situations with confidence.',
+        topics: ['Greetings and introductions', 'English sounds and the alphabet', 'Present simple and "to be"', 'Numbers, dates and telling the time', 'Family, home and daily routine', 'Shopping, food and asking the way'],
+        canDo: ['Introduce yourself and others', 'Ask and answer simple questions', 'Understand slow, clear speech'],
+      },
+      intermediate: {
+        goal: 'Talk about the past and future, give opinions and take part in work and study conversations.',
+        topics: ['Past simple, present perfect and future forms', 'Modal verbs and polite requests', 'Phone calls and emails', 'Giving opinions and reasons', 'Health, travel and workplace English', 'Reading articles and short stories'],
+        canDo: ['Tell a story about the past', 'Write clear emails and short texts', 'Follow most everyday conversations'],
+      },
+      advanced: {
+        goal: 'Communicate fluently and persuasively for work, study and professional life.',
+        topics: ['Conditionals and advanced tenses', 'Formal and informal register', 'Interviews, presentations and negotiation', 'Idioms, phrasal verbs and nuance', 'Academic and report writing', 'Understanding different English accents'],
+        canDo: ['Present and argue a point with confidence', 'Write formal reports and applications', 'Follow fast speech, media and meetings'],
+      },
+    },
+    videos: [
+      { title: 'Hello: greetings and introductions', length: 'Short clip', youtube: null, src: null },
+      { title: 'English sounds and stress', length: 'Short clip', youtube: null, src: null },
+      { title: 'Everyday English at work', length: 'Short clip', youtube: null, src: null },
+    ],
+  },
 ]
 
 export const levelMeta = [

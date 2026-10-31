@@ -22,7 +22,7 @@ export default function About() {
         eyebrow="About us"
         title="Languages taught"
         italic="with respect for the culture."
-        text="Explore Bantu Languages teaches Swahili, French, Zulu, Xhosa and Portuguese in Cape Town, with a focus on how languages connect people across Africa."
+        text="Explore Bantu Languages teaches Swahili, French, Zulu, Xhosa, Portuguese and English in Cape Town, with a focus on how languages connect people across Africa."
         image="/images/classroom.jpg"
         crumbs={[{ label: 'About' }]}
       />
@@ -30,10 +30,10 @@ export default function About() {
       <section className="bg-background py-24 sm:py-32">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 sm:px-10 lg:grid-cols-2 lg:px-16">
           <div>
-            <SectionHeader eyebrow="Our story" title="Why these" italic="five languages?" />
+            <SectionHeader eyebrow="Our story" title="Why these" italic="six languages?" />
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted sm:text-lg">
-              <p>Swahili, isiZulu and isiXhosa belong to the Bantu language family, one of the largest language families in Africa. French and Portuguese are not Bantu languages, but they are spoken by millions of Africans and are essential for work, study and family life across the continent.</p>
-              <p>Together, these five languages let you move between East, Central, Southern and West Africa, and beyond. We teach each at three levels so that a complete beginner and an experienced speaker can both find the right class.</p>
+              <p>Swahili, isiZulu and isiXhosa belong to the Bantu language family, one of the largest language families in Africa. French, Portuguese and English are not Bantu languages, but they are spoken by millions of Africans and are essential for work, study and family life across the continent.</p>
+              <p>Together, these six languages let you move between East, Central, Southern and West Africa, and beyond. We teach each at three levels so that a complete beginner and an experienced speaker can both find the right class.</p>
             </div>
           </div>
           <div className="relative">

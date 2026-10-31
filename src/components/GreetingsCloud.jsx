@@ -1,4 +1,4 @@
-// Signature animation: greetings from the five languages drift upward like speech from a classroom.
+// Signature animation: greetings from the six languages drift upward like speech from a classroom.
 const WORDS = [
   { t: 'Jambo', c: '#2E8B57', l: '6%', d: '0s', s: 'text-3xl' },
   { t: 'Sawubona', c: '#E8A90C', l: '22%', d: '1.8s', s: 'text-2xl' },
@@ -10,6 +10,7 @@ const WORDS = [
   { t: 'Karibu', c: '#E8A90C', l: '50%', d: '6.3s', s: 'text-xl' },
   { t: 'Bom dia', c: '#F59A57', l: '82%', d: '7.2s', s: 'text-xl' },
   { t: 'Merci', c: '#7FA8E6', l: '30%', d: '8s', s: 'text-xl' },
+  { t: 'Hello', c: '#5CC6CF', l: '66%', d: '5.9s', s: 'text-2xl' },
 ]
 
 export default function GreetingsCloud({ className = '' }) {

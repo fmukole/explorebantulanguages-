@@ -13,7 +13,7 @@ export default function Contact() {
   ]
   return (
     <>
-      <Seo title="Contact" description="Book a lesson or ask about Swahili, French, Zulu, Xhosa and Portuguese courses." />
+      <Seo title="Contact" description="Book a lesson or ask about Swahili, French, Zulu, Xhosa, Portuguese and English courses." />
       <PageHero eyebrow="Contact" title="Book a lesson," italic="say hello." text="Tell us the language, level and group size. We will reply with dates and a quote." image="/images/culture/lisbon-tram.jpg" crumbs={[{ label: 'Contact' }]} />
       <section className="bg-background py-20 sm:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 sm:px-10 lg:grid-cols-5 lg:px-16">

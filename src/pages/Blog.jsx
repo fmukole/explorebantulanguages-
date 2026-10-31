@@ -12,7 +12,7 @@ export default function Blog() {
 
   return (
     <>
-      <Seo title="Blog" description="Tips, phrases and cultural stories for learners of Swahili, French, Zulu, Xhosa and Portuguese." />
+      <Seo title="Blog" description="Tips, phrases and cultural stories for learners of Swahili, French, Zulu, Xhosa, Portuguese and English." />
       <PageHero
         eyebrow="The blog"
         title="Tips, phrases and"

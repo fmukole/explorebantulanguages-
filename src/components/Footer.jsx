@@ -15,7 +15,7 @@ export default function Footer() {
               <Logo size="h-14 w-14" />
               <span className="font-display text-lg font-bold leading-tight">{site.name}</span>
             </div>
-            <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/60">{site.tagline} Swahili, French, Zulu, Xhosa and Portuguese, at three levels each.</p>
+            <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/60">{site.tagline} Swahili, French, Zulu, Xhosa, Portuguese and English, at three levels each.</p>
             <p className="mt-5 inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.18em] text-white/60">
               <span className="ring-pulse h-2 w-2 rounded-full bg-accent" /> Now enrolling in {site.location.split(',')[0]}
             </p>

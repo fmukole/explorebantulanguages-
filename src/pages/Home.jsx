@@ -36,14 +36,14 @@ function Hero() {
       <GreetingsCloud />
       <div className="relative z-10 mx-auto flex min-h-[100dvh] max-w-7xl flex-col justify-end px-6 pb-20 pt-32 sm:px-10 lg:px-16">
         <p className="hero-meta mb-6 font-mono text-xs uppercase tracking-[0.25em] text-white/70">
-          Swahili · French · Zulu · Xhosa · Portuguese
+          Swahili · French · Zulu · Xhosa · Portuguese · English
         </p>
         <h1 className="max-w-5xl font-display text-5xl font-bold leading-[0.95] tracking-tighter text-white sm:text-7xl lg:text-8xl">
           <span className="hero-line-1 block">Learn a language.</span>
           <span className="hero-line-2 block font-serif font-medium italic">Step into a culture.</span>
         </h1>
         <p className="hero-meta mt-8 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
-          Five languages, three levels each. Real teachers, short videos and the people, places and music behind every word.
+          Six languages, three levels each. Real teachers, short videos and the people, places and music behind every word.
         </p>
         <div className="hero-cta mt-10 flex flex-wrap gap-3">
           <Link to="/languages" className="magnetic-btn inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-white shadow-lg shadow-primary/30">
@@ -75,13 +75,13 @@ function LanguageGrid() {
   return (
     <section ref={ref} className="relative bg-background py-24 sm:py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
-        <SectionHeader eyebrow="Choose your language" title="Five languages," italic="one welcoming school." text="Each language has its own page with all three levels, short videos, flags and photos from the countries where it is spoken." />
+        <SectionHeader eyebrow="Choose your language" title="Six languages," italic="one welcoming school." text="Each language has its own page with all three levels, short videos, flags and photos from the countries where it is spoken." />
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-6">
           {languages.map((l, i) => (
             <Link
               key={l.slug}
               to={`/languages/${l.slug}`}
-              className={`lang-card group relative overflow-hidden rounded-4xl bg-deep p-6 text-white shadow-lg sm:p-8 ${i < 2 ? 'lg:col-span-3' : 'lg:col-span-2'}`}
+              className={`lang-card group relative overflow-hidden rounded-4xl bg-deep p-6 text-white shadow-lg sm:p-8 lg:col-span-2`}
             >
               <img src={l.photos[0].src} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover opacity-40 transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0" style={{ background: `linear-gradient(160deg, ${l.color}CC, #0E1A33EE 70%)` }} />
@@ -111,9 +111,9 @@ function LanguageGrid() {
 
 function Pillars() {
   const stats = [
-    { n: 5, label: 'Languages', sub: 'Swahili, French, Zulu, Xhosa, Portuguese' },
+    { n: 6, label: 'Languages', sub: 'Swahili, French, Zulu, Xhosa, Portuguese, English' },
     { n: 3, label: 'Levels each', sub: 'Beginner, Intermediate and Advanced' },
-    { n: 15, label: 'Courses', sub: 'Five languages across three levels' },
+    { n: 18, label: 'Courses', sub: 'Six languages across three levels' },
   ]
   return (
     <section className="grid-bg relative bg-surface py-20 sm:py-28">
@@ -189,12 +189,6 @@ function Videos() {
                 <VideoSlot title={l.videos[0].title} color={l.color} poster={l.photos[0].src} src={l.videos[0].src} youtube={l.videos[0].youtube} note={l.name} />
               </Link>
             ))}
-            <div className="flex items-center justify-center rounded-3xl border-2 border-dashed border-divider bg-surface p-8 text-center">
-              <div>
-                <p className="font-display text-lg font-bold">More clips coming</p>
-                <p className="mt-2 text-sm text-muted">Each language page has three video slots, plus a preview for every level.</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

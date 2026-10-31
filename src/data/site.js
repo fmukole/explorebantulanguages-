@@ -4,7 +4,7 @@ export const site = {
   short: 'Explore Bantu',
   tagline: 'Learn a language. Step into a culture.',
   description:
-    'Language lessons in Swahili, French, Zulu, Xhosa and Portuguese, with Beginner, Intermediate and Advanced courses, short videos and the cultures behind each language.',
+    'Language lessons in Swahili, French, Zulu, Xhosa, Portuguese and English, with Beginner, Intermediate and Advanced courses, short videos and the cultures behind each language.',
   location: 'Cape Town, South Africa',
   // TODO(owner): confirm the phone number and add a lessons email address.
   phone: '078 668 9387',

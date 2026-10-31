@@ -20,7 +20,7 @@ export const teachers = [
     role: 'Teacher',
     note: '',
     photo: null,
-    languages: ['english', 'portuguese'],
+    languages: ['french', 'portuguese'],
   },
   {
     name: 'Joyce Marupula',

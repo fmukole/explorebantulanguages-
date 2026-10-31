@@ -80,6 +80,17 @@ export const languages = [
     greeting: 'Bonjour!',
     family: 'Romance language (Indo-European), widely spoken in Africa',
     color: '#7A4FB5',
+    levelVideos: false,
+    regionMap: 'french',
+    history: {
+      title: 'A short history of French',
+      paragraphs: [
+        'French is a Romance language: it grew out of the Latin spoken by Roman soldiers, traders and settlers in Gaul, the land the Romans conquered in the first century BC. Over centuries, everyday Latin mixed with the local Gaulish language and, later, the speech of the Germanic Franks, who gave France its name.',
+        'By the ninth century this spoken Latin had changed so much that it was a language of its own. One of the earliest texts in an early form of French is the Oaths of Strasbourg, dated 842. In 1539 French replaced Latin in the courts and official documents of the kingdom.',
+        'French has many sisters. Spanish, Portuguese, Italian, Catalan and Romanian all grew from Latin too, which is why their words often look alike: Latin aqua became eau in French, acqua in Italian, agua in Spanish, água in Portuguese and apă in Romanian. If you speak Portuguese or Spanish, a good part of French vocabulary will feel familiar.',
+        'Through trade, empire and education, French then travelled to the Americas, Africa and the Pacific. Today a large share of French speakers live in Africa.',
+      ],
+    },
     tagline: 'From Paris cafés to Kinshasa and Dakar, French connects more of Africa than any other European language.',
     intro:
       'French is a Romance language spoken on five continents. A large share of the world’s French speakers now live in Africa, and French is an official or working language in many countries from Senegal to DR Congo. It is not a Bantu language, but it is an essential one for anyone working across Central and West Africa.',
@@ -89,6 +100,7 @@ export const languages = [
       { name: 'Senegal', id: 686, flag: flag('sn'), note: 'French is official, used alongside Wolof in daily life.' },
       { name: "Côte d'Ivoire", id: 384, flag: flag('ci'), note: 'French is the official language and a lingua franca among many communities.' },
       { name: 'Cameroon', id: 120, flag: flag('cm'), note: 'French and English are both official languages.' },
+      { name: 'Burundi', id: 108, flag: flag('bi'), note: 'French is an official language alongside Kirundi, used in government, schools and business.' },
     ],
     culture: [
       { title: 'The café', text: 'A coffee in France is rarely just a coffee. It is a reason to sit, talk and watch the street.' },
@@ -137,6 +149,18 @@ export const languages = [
     greeting: 'Sawubona!',
     family: 'Bantu language (Nguni branch)',
     color: '#E8A90C',
+    levelVideos: false,
+    regionMap: 'nguni',
+    mapFocus: 'zulu',
+    history: {
+      title: 'Zulu and the Nguni languages',
+      paragraphs: [
+        'isiZulu belongs to the Nguni branch of the Bantu languages. The Bantu languages began in West-Central Africa, and over thousands of years Bantu-speaking peoples spread east and south across the continent. The ancestors of the Nguni peoples reached the south-eastern coast of southern Africa more than a thousand years ago.',
+        'Their languages developed side by side as isiZulu, isiXhosa, isiNdebele and siSwati. They share much of their grammar and vocabulary, and speakers of one can often follow another.',
+        'In the early nineteenth century the rise of the Zulu kingdom and the upheavals that followed moved people and languages across the region. Groups that left Zululand carried their Nguni speech north into what is now Zimbabwe, where it became the Ndebele of Matabeleland, while the Swati kingdom took shape in what is now Eswatini.',
+        'Today isiZulu is the most widely spoken home language in South Africa, and it is a doorway into the other Nguni languages.',
+      ],
+    },
     tagline: 'The most widely spoken home language in South Africa, with a greeting that means “I see you”.',
     intro:
       'isiZulu is a Bantu language of the Nguni branch, spoken mainly in KwaZulu-Natal and across Gauteng and other provinces of South Africa. It is one of South Africa’s eleven official languages and is closely related to isiXhosa, siSwati and isiNdebele.',
@@ -189,6 +213,18 @@ export const languages = [
     greeting: 'Molo!',
     family: 'Bantu language (Nguni branch)',
     color: '#C8202B',
+    levelVideos: false,
+    regionMap: 'nguni',
+    mapFocus: 'xhosa',
+    history: {
+      title: 'Xhosa and the Nguni languages',
+      paragraphs: [
+        'isiXhosa is a Nguni language, a close relative of isiZulu, isiNdebele and siSwati. Like them it comes from the Bantu languages that spread from West-Central Africa across the continent over thousands of years, and it has been spoken along the south-eastern coast for centuries.',
+        'Its home is the Eastern Cape, often called Xhosaland, from the Wild Coast to the Kei River and beyond. From there it has spread with people to Cape Town, Johannesburg and the rest of the country.',
+        'isiXhosa is known for its clicks, which were taken into the language through long contact with Khoisan-speaking peoples. It has been written in the Latin alphabet since the nineteenth century and has a rich tradition of praise poetry, newspapers and literature.',
+        'Xhosa and Zulu share much grammar and vocabulary, and Xhosa speakers can often follow Zulu, Ndebele and Swati with a little practice. Learning one Nguni language makes the others much easier.',
+      ],
+    },
     tagline: 'A language of three click sounds, praise poets and the Eastern Cape coast, spoken in Cape Town every day.',
     intro:
       'isiXhosa is a Bantu language of the Nguni branch, spoken mainly in the Eastern and Western Cape. It is one of South Africa’s official languages and is the language of Cape Town’s large Xhosa-speaking communities, which makes it especially useful if you live or work in the city.',

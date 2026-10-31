@@ -7,6 +7,7 @@ import './index.css'
 const Home = lazy(() => import('./pages/Home.jsx'))
 const Languages = lazy(() => import('./pages/Languages.jsx'))
 const LanguagePage = lazy(() => import('./pages/LanguagePage.jsx'))
+const Services = lazy(() => import('./pages/Services.jsx'))
 const About = lazy(() => import('./pages/About.jsx'))
 const Blog = lazy(() => import('./pages/Blog.jsx'))
 const BlogPost = lazy(() => import('./pages/BlogPost.jsx'))
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root')).render(
             <Route index element={<Home />} />
             <Route path="languages" element={<Languages />} />
             <Route path="languages/:slug" element={<LanguagePage />} />
+            <Route path="services" element={<Services />} />
             <Route path="about" element={<About />} />
             <Route path="blog" element={<Blog />} />
             <Route path="blog/:slug" element={<BlogPost />} />

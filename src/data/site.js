@@ -17,6 +17,7 @@ export const site = {
 export const nav = [
   { label: 'Home', to: '/' },
   { label: 'Languages', to: '/languages' },
+  { label: 'Language Services', to: '/services' },
   { label: 'About', to: '/about' },
   { label: 'Blog', to: '/blog' },
   { label: 'Contact', to: '/contact' },
@@ -25,6 +26,7 @@ export const nav = [
 export const instructor = {
   name: 'Mr Madinda N. Kanyiki',
   title: 'Independent Linguist and Language Researcher',
+  speaks: ['English', 'French', 'Swahili', 'German', 'Chichewa', 'Japanese'],
   seminar: {
     title: 'Exploring the Unity and Diversity of Bantu Languages: A Comparative Study',
     series: 'SLL Research Seminar Series, University of Cape Town',

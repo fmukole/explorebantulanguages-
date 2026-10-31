@@ -7,6 +7,8 @@ import LevelColumns from '../components/LevelColumns'
 import VideoSlot from '../components/VideoSlot'
 import PhotoTile from '../components/PhotoTile'
 import RegionMap from '../components/RegionMap'
+import FrancophoneMap from '../components/FrancophoneMap'
+import SouthernAfricaMap from '../components/SouthernAfricaMap'
 import Flag from '../components/Flag'
 import CTABanner from '../components/CTABanner'
 import NotFound from './NotFound'
@@ -111,7 +113,8 @@ export default function LanguagePage() {
               {lang.photos.map((p) => (<PhotoTile key={p.src} photo={p} ratio="aspect-[16/10]" />))}
             </div>
           )}
-          {lang.regionMap && <RegionMap language={lang} />}
+          {lang.regionMap === true && <RegionMap language={lang} />}
+          {lang.regionMap === 'french' && <FrancophoneMap color={lang.color} />}
         </div>
       </section>
 
@@ -126,6 +129,7 @@ export default function LanguagePage() {
               </div>
             ))}
           </div>
+          {lang.regionMap === 'nguni' && <SouthernAfricaMap focus={lang.mapFocus} />}
         </div>
       </section>
 

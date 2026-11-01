@@ -41,7 +41,7 @@ export const languages = [
     ],
     photos: [
       { src: '/images/culture/stone-town-market.jpg', alt: 'A busy street around the markets of Stone Town, Zanzibar', caption: 'Market street in Stone Town, Zanzibar, Tanzania', credit: 'Aron Marinelli', creditUrl: 'https://unsplash.com/photos/a-group-of-people-walking-around-a-market-19GKdp1fcT8' },
-      { src: '/images/culture/maasai-mara.jpg', alt: 'Two cheetahs in the Maasai Mara, Kenya', caption: 'Cheetahs in the Maasai Mara, Kenya', credit: 'Pop & Zebra', creditUrl: 'https://unsplash.com/photos/wildlife-photography-of-two-cheetahs-fwaPOsZI-_E' },
+      { src: '/images/culture/tanzania-street.webp', alt: 'Two men laughing and talking on a street in Tanzania', caption: 'Friends talking on a street in Tanzania' },
     ],
     phrases: [
       { text: 'Hujambo?', meaning: 'Hello, how are you?', reply: 'Sijambo = I am well' },
@@ -109,7 +109,7 @@ export const languages = [
       { title: 'La Francophonie', text: 'More than a language, it is a network of countries and communities that share French as a common tongue.' },
     ],
     photos: [
-      { src: '/images/culture/paris-eiffel.jpg', alt: 'The Eiffel Tower seen from a street corner in Paris', caption: 'Paris, France', credit: 'Sander Traa', creditUrl: 'https://unsplash.com/photos/a-view-of-the-eiffel-tower-from-a-street-corner-2o9Y-2qx8Mw' },
+      { src: '/images/culture/eiffel-tower.jpg', alt: 'The Eiffel Tower rising above trees in Paris', caption: 'The Eiffel Tower, Paris, France', credit: 'Harrison Mitchell', creditUrl: 'https://unsplash.com/photos/-8vlGy1JIQc' },
       { src: '/images/culture/dakar-skyline.jpg', alt: 'City skyline across the water in Dakar, Senegal', caption: 'The skyline of Dakar, Senegal', credit: 'Kurt Cotoaga', creditUrl: 'https://unsplash.com/photos/city-skyline-across-body-of-water-during-daytime-FWTN3Uquq20' },
     ],
     phrases: [
@@ -152,6 +152,7 @@ export const languages = [
     levelVideos: false,
     regionMap: 'nguni',
     mapFocus: 'zulu',
+    heroImage: '/images/about/nguni.webp',
     history: {
       title: 'Zulu and the Nguni languages',
       paragraphs: [
@@ -174,7 +175,7 @@ export const languages = [
       { title: 'Ubuntu', text: 'The idea that “a person is a person through other people” runs through Zulu proverbs and everyday manners.' },
     ],
     photos: [
-      { src: '/images/culture/kwazulu-natal.jpg', alt: 'A group of women in red and yellow outfits in KwaZulu-Natal', caption: 'Traditional dress in KwaZulu-Natal, South Africa', credit: 'Ideal Media Content', creditUrl: 'https://unsplash.com/photos/a-group-of-women-in-red-and-yellow-outfits-bnYqWR6w7kg' },
+      { src: '/images/culture/zulu-traditional-attire.webp', alt: 'A man seated in traditional Zulu attire', caption: 'Traditional Zulu attire, South Africa' },
     ],
     phrases: [
       { text: 'Sawubona', meaning: 'Hello (to one person)', reply: 'Yebo, sawubona' },
@@ -216,6 +217,7 @@ export const languages = [
     levelVideos: false,
     regionMap: 'nguni',
     mapFocus: 'xhosa',
+    historyPhotoCount: 2,
     history: {
       title: 'Xhosa and the Nguni languages',
       paragraphs: [
@@ -238,7 +240,8 @@ export const languages = [
       { title: 'Wild Coast', text: 'The Eastern Cape coastline is one of the great landscapes of Xhosa-speaking South Africa.' },
     ],
     photos: [
-      { src: '/images/culture/wild-coast.jpg', alt: 'People walking up a hill next to the ocean on the Wild Coast', caption: 'The Wild Coast, Eastern Cape, South Africa', credit: 'Arthur Hickinbotham', creditUrl: 'https://unsplash.com/photos/a-group-of-people-walking-up-a-hill-next-to-the-ocean-n2og3g9en-w' },
+      { src: '/images/culture/xhosa-family.webp', alt: 'A Xhosa family in traditional attire sitting on the grass', caption: 'A Xhosa family in traditional attire' },
+      { src: '/images/culture/xhosa-woman.webp', alt: 'A Xhosa woman carrying a clay pot on her head', caption: 'A Xhosa woman in traditional dress' },
     ],
     phrases: [
       { text: 'Molo', meaning: 'Hello (to one person)', reply: 'Molo, unjani?' },

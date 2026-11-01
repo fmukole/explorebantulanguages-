@@ -17,7 +17,7 @@ export const site = {
 export const nav = [
   { label: 'Home', to: '/' },
   { label: 'Languages', to: '/languages' },
-  { label: 'Language Services', to: '/services' },
+  { label: 'Language Lab', to: '/language-lab' },
   { label: 'About', to: '/about' },
   { label: 'Blog', to: '/blog' },
   { label: 'Contact', to: '/contact' },

@@ -52,13 +52,15 @@ export default function Navbar() {
               <NavLink to="/languages" className={(s) => `${linkClass(s)} inline-flex items-center gap-1`}>
                 Languages <ChevronDown className="h-3.5 w-3.5" />
               </NavLink>
-              <div className="invisible absolute left-1/2 top-full w-64 -translate-x-1/2 pt-4 opacity-0 transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
-                <div className="rounded-3xl border border-divider bg-surface p-2 shadow-2xl">
+              <div className="invisible absolute left-1/2 top-full w-[24rem] -translate-x-1/2 pt-4 opacity-0 transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                <div className="grid grid-cols-2 gap-2 rounded-3xl border border-divider bg-surface p-3 shadow-2xl">
                   {languages.map((l) => (
-                    <Link key={l.slug} to={`/languages/${l.slug}`} className="flex items-center gap-3 rounded-2xl px-3 py-2.5 hover:bg-background">
-                      <Flag src={l.countries[0].flag} name={l.countries[0].name} size="h-8 w-8" ring="ring-1 ring-divider" />
+                    <Link key={l.slug} to={`/languages/${l.slug}`} className="flex flex-col items-start gap-2 rounded-2xl border border-divider bg-background p-3 transition hover:border-primary hover:shadow-md">
+                      <span className="flex w-full items-center justify-between">
+                        <Flag src={l.countries[0].flag} name={l.countries[0].name} size="h-9 w-9" ring="ring-1 ring-divider" />
+                        <span className="font-serif text-base italic text-muted">{l.greeting}</span>
+                      </span>
                       <span className="text-sm font-semibold text-ink">{l.name}</span>
-                      <span className="ml-auto font-serif text-base italic text-muted">{l.greeting}</span>
                     </Link>
                   ))}
                 </div>
@@ -101,12 +103,12 @@ export default function Navbar() {
               ))}
             </div>
             <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.18em] text-accent">Languages</p>
-            <div className="mt-3 grid grid-cols-1 gap-2">
+            <div className="mt-3 grid grid-cols-2 gap-2">
               {languages.map((l) => (
-                <Link key={l.slug} to={`/languages/${l.slug}`} className="flex items-center gap-3 rounded-2xl border border-white/10 px-4 py-3 text-white">
+                <Link key={l.slug} to={`/languages/${l.slug}`} className="flex flex-col items-start gap-2 rounded-2xl border border-white/10 px-4 py-3 text-white">
                   <Flag src={l.countries[0].flag} name={l.countries[0].name} size="h-8 w-8" ring="ring-1 ring-white/30" />
                   <span className="font-semibold">{l.name}</span>
-                  <span className="ml-auto font-serif italic text-white/60">{l.greeting}</span>
+                  <span className="font-serif text-sm italic text-white/60">{l.greeting}</span>
                 </Link>
               ))}
             </div>

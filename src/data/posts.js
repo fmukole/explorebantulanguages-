@@ -1,6 +1,110 @@
 // Sample blog posts. Newest first. To add a post, copy an entry, give it a unique slug and edit the text.
 // body blocks: { type: 'p' | 'h2' | 'ul' | 'quote', text | items }
 export const posts = [
+
+  {
+    slug: 'french-and-english-shared-words',
+    title: 'French and English share thousands of words: how to use that',
+    date: '2026-11-01',
+    category: 'Choosing a language',
+    readTime: '4 min read',
+    cover: '/images/lab/translation.webp',
+    coverAlt: 'Two people studying a book with French and English words side by side',
+    excerpt: 'After 1066, French poured into English. That history is a gift if you are learning either language.',
+    body: [
+      { type: 'p', text: 'In 1066 the Normans, who spoke a form of French, conquered England. For about three centuries French was the language of the court and the law, while ordinary people kept speaking English. The two languages mixed, and English took in thousands of French words.' },
+      { type: 'h2', text: 'Words you already know' },
+      { type: 'p', text: 'Government, justice, court, army, nation, important and possible all came into English from French. In French they look almost the same: gouvernement, justice, cour, armée, nation, important, possible. The spelling is close. The pronunciation is not, and that is the part to practise.' },
+      { type: 'h2', text: 'Watch out for false friends' },
+      { type: 'ul', items: ['actuellement means currently, not actually.', 'une librairie is a bookshop, not a library.', 'attendre means to wait, not to attend.', 'demander means to ask, not to demand.'] },
+      { type: 'quote', text: 'Learn the shared words first. They give you hundreds of words on the first day.' },
+      { type: 'p', text: 'We use this overlap in both our French and English classes, so speakers of one can move quickly into the other.' },
+    ],
+  },
+  {
+    slug: 'portuguese-and-french-sisters',
+    title: 'Portuguese and French: two sisters from Latin',
+    date: '2026-10-31',
+    category: 'How languages work',
+    readTime: '3 min read',
+    cover: '/images/blog/french-portuguese.webp',
+    coverAlt: 'Two friends wrapped in the French and Portuguese flags',
+    excerpt: 'Both languages grew out of Latin. Knowing one gives you a head start on the other.',
+    body: [
+      { type: 'p', text: 'French, Portuguese, Spanish, Italian and Romanian are all Romance languages: they developed from the Latin spoken across the Roman Empire. That shared ancestor is why so many words look alike.' },
+      { type: 'ul', items: ['Latin aqua became eau in French and água in Portuguese.', 'Latin nox became nuit in French and noite in Portuguese.', 'Latin lingua became langue in French and língua in Portuguese.'] },
+      { type: 'h2', text: 'Where they differ' },
+      { type: 'p', text: 'Sounds changed in different ways. French lost many final consonants, while Portuguese kept more of the written form and developed nasal vowels. A learner who knows the pattern can often guess the other language’s word.' },
+      { type: 'p', text: 'If you need both for work in Africa, learning them together saves time. That is how we plan our French and Portuguese classes.' },
+    ],
+  },
+  {
+    slug: 'zulu-and-xhosa-how-close',
+    title: 'Zulu and Xhosa: how close are they really?',
+    date: '2026-10-30',
+    category: 'How languages work',
+    readTime: '3 min read',
+    cover: '/images/about/nguni.webp',
+    coverAlt: 'Two people in traditional Nguni dress greeting each other',
+    excerpt: 'They are different languages, but they are cousins. Here is what carries over and what does not.',
+    body: [
+      { type: 'p', text: 'isiZulu and isiXhosa both belong to the Nguni branch of the Bantu languages, together with siSwati and the Ndebele languages. They share a lot of grammar and vocabulary, and speakers can often follow each other with a little effort.' },
+      { type: 'h2', text: 'The same idea, different words' },
+      { type: 'ul', items: ['Hello: Sawubona (Zulu) and Molo (Xhosa).', 'Thank you: Ngiyabonga (Zulu) and Enkosi (Xhosa).', 'Yes: Yebo (Zulu) and Ewe (Xhosa).', 'Person and people: umuntu and abantu in Zulu, umntu and abantu in Xhosa.'] },
+      { type: 'h2', text: 'What to expect' },
+      { type: 'p', text: 'The noun class system works the same way in both, and so do the verb endings. The clicks are used in both, though Xhosa uses them more. If you learn one, you will find the other much easier.' },
+    ],
+  },
+  {
+    slug: 'interpretation-translation-transcription',
+    title: 'Interpretation, translation and transcription: what is the difference?',
+    date: '2026-10-29',
+    category: 'Language Lab',
+    readTime: '3 min read',
+    cover: '/images/blog/translator.webp',
+    coverAlt: 'A person working at a laptop with notes and coffee',
+    excerpt: 'Three services, often confused. Here is what each one means and how to ask for the right one.',
+    body: [
+      { type: 'p', text: 'People often ask for a translator when they need an interpreter, or the other way round. The three services are different.' },
+      { type: 'ul', items: ['Interpretation is spoken. An interpreter speaks for you, live, so that two people or two groups can understand each other.', 'Translation is written. A translator renders a document, book or research paper from one language into another.', 'Transcription turns a recording, such as a meeting, conversation or speech, into written text. It can also be translated.'] },
+      { type: 'h2', text: 'How to ask for a quote' },
+      { type: 'p', text: 'Tell us the language pair, what the material is, how long it is and when you need it. Every job is different, so we quote each one separately. You can ask on the Language Lab page.' },
+    ],
+  },
+  {
+    slug: 'practise-a-language-at-home',
+    title: 'Ten minutes a day: how to practise a language at home',
+    date: '2026-10-27',
+    category: 'Study tips',
+    readTime: '3 min read',
+    cover: '/images/blog/learning-at-home.webp',
+    coverAlt: 'A student writing notes at a café table beside a laptop',
+    excerpt: 'Short, regular practice beats long sessions. A simple routine you can start tonight.',
+    body: [
+      { type: 'p', text: 'Most learners do not fail because the language is too hard. They fail because they stop. A short routine that you can keep is worth more than a long one that you drop after a week.' },
+      { type: 'ul', items: ['Say the greetings aloud every morning.', 'Learn five new words and use each in a sentence.', 'Listen to a short recording and repeat one line.', 'Write two sentences about your day.'] },
+      { type: 'quote', text: 'Ten minutes a day for a month is five hours of practice.' },
+      { type: 'p', text: 'Then bring your questions to class. That is what a teacher is for.' },
+    ],
+  },
+  {
+    slug: 'learning-in-a-group-or-in-person',
+    title: 'In person or in a group? Choosing how to learn',
+    date: '2026-10-26',
+    category: 'Choosing a language',
+    readTime: '3 min read',
+    cover: '/images/blog/class.webp',
+    coverAlt: 'A teacher and students in a classroom',
+    excerpt: 'Both work. The right choice depends on your goals, your schedule and your budget.',
+    body: [
+      { type: 'p', text: 'One-to-one lessons give you the teacher’s full attention and a plan built around you. Group lessons give you people to practise with, and they cost less per person.' },
+      { type: 'h2', text: 'Choose one-to-one if' },
+      { type: 'ul', items: ['You have a deadline, such as a move or a job.', 'You want to focus on one skill, such as speaking.', 'Your schedule changes often.'] },
+      { type: 'h2', text: 'Choose a group if' },
+      { type: 'ul', items: ['You learn best by talking with others.', 'You are learning with family, friends or colleagues.', 'You want the lowest cost per person.'] },
+      { type: 'p', text: 'If the language you want is not on our list, tell us on the Home page. We work with a network of language providers and can arrange training in person or in a group.' },
+    ],
+  },
   {
     slug: 'noun-classes-in-plain-english',
     title: 'Noun classes in plain English: the secret engine of Bantu languages',
@@ -27,8 +131,8 @@ export const posts = [
     date: '2026-10-21',
     category: 'Pronunciation',
     readTime: '3 min read',
-    cover: '/images/culture/wild-coast.jpg',
-    coverAlt: 'The Wild Coast in the Eastern Cape, South Africa',
+    cover: '/images/culture/xhosa-family.webp',
+    coverAlt: 'A Xhosa family in traditional attire',
     excerpt: 'The clicks written c, q and x look intimidating on paper. They are easier than you think once you treat them as sounds you already make.',
     body: [
       { type: 'p', text: 'Many learners stop at the clicks before they have started. In fact, most English speakers already make click-like sounds without thinking about it, such as the “tsk” of disapproval or the clop used to call a horse.' },
@@ -63,8 +167,8 @@ export const posts = [
     date: '2026-10-07',
     category: 'Phrases',
     readTime: '3 min read',
-    cover: '/images/culture/maasai-mara.jpg',
-    coverAlt: 'Two cheetahs in the Maasai Mara, Kenya',
+    cover: '/images/culture/tanzania-street.webp',
+    coverAlt: 'Two men talking and laughing on a street in Tanzania',
     excerpt: 'Greeting someone in their own language changes the whole interaction. Start with these five.',
     body: [
       { type: 'p', text: 'You do not need much Swahili to be welcomed warmly. A few well-chosen phrases, said with a smile, go a long way.' },
@@ -79,8 +183,8 @@ export const posts = [
     date: '2026-09-30',
     category: 'Culture',
     readTime: '3 min read',
-    cover: '/images/culture/kwazulu-natal.jpg',
-    coverAlt: 'Women in traditional dress in KwaZulu-Natal',
+    cover: '/images/culture/zulu-traditional-attire.webp',
+    coverAlt: 'A man seated in traditional Zulu attire',
     excerpt: 'In isiZulu, saying hello is also a way of acknowledging another person. The grammar of the greeting shows the culture behind it.',
     body: [
       { type: 'p', text: 'Sawubona is often translated as hello, but its literal sense is closer to “I see you”. The traditional reply, Yebo, sawubona, returns the same recognition.' },
@@ -91,6 +195,8 @@ export const posts = [
     ],
   },
 ]
+
+posts.sort((a, b) => b.date.localeCompare(a.date))
 
 export const getPost = (slug) => posts.find((p) => p.slug === slug)
 export const postCategories = ['All', ...Array.from(new Set(posts.map((p) => p.category)))]

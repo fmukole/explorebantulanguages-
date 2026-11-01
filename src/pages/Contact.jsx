@@ -2,6 +2,7 @@ import { Phone, MapPin, Clock, MessageCircle } from 'lucide-react'
 import Seo from '../components/Seo'
 import PageHero from '../components/PageHero'
 import ContactForm from '../components/ContactForm'
+import WorldMap from '../components/WorldMap'
 import { site } from '../data/site'
 
 export default function Contact() {
@@ -34,6 +35,7 @@ export default function Contact() {
           <div className="lg:col-span-3"><ContactForm /></div>
         </div>
       </section>
+      <WorldMap eyebrow="Where our languages reach" id="map" />
     </>
   )
 }

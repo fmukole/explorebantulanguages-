@@ -30,7 +30,7 @@ export default function LanguagePage() {
         title={`Learn ${lang.name}.`}
         italic={lang.greeting}
         text={lang.tagline}
-        image={lang.photos[0].src}
+        image={lang.heroImage || lang.photos[0].src}
         crumbs={[{ label: 'Languages', to: '/languages' }, { label: lang.name }]}
       >
         <div className="flex flex-wrap items-center gap-3">
@@ -61,7 +61,7 @@ export default function LanguagePage() {
           <SectionHeader dark eyebrow="Watch and listen" title={`${lang.name} in`} italic="short videos." text="Short clips to watch before and after class. Video slots fill with real lessons as they are recorded." />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {lang.videos.map((v) => (
-              <VideoSlot key={v.title} title={v.title} label={v.length} color={lang.color} poster={lang.photos[0].src} src={v.src} youtube={v.youtube} note={lang.name} />
+              <VideoSlot key={v.title} title={v.title} label={v.length} color={lang.color} poster={lang.heroImage || lang.photos[0].src} src={v.src} youtube={v.youtube} note={lang.name} />
             ))}
           </div>
         </div>
@@ -107,7 +107,13 @@ export default function LanguagePage() {
             </div>
           ) : lang.history ? (
             <div className="mt-8 grid items-stretch gap-8 lg:grid-cols-2">
-              <PhotoTile photo={lang.photos[0]} ratio="aspect-[4/5] lg:aspect-auto" className="min-h-[360px]" />
+              {(lang.historyPhotoCount || 1) > 1 ? (
+                <div className="grid gap-4">
+                  {lang.photos.slice(0, lang.historyPhotoCount).map((p) => (<PhotoTile key={p.src} photo={p} ratio="aspect-[16/10]" />))}
+                </div>
+              ) : (
+                <PhotoTile photo={lang.photos[0]} ratio="aspect-[4/5] lg:aspect-auto" className="min-h-[360px] lg:h-[640px]" />
+              )}
               <div className="rounded-4xl border border-divider bg-surface p-8 sm:p-10">
                 <p className="font-mono text-xs uppercase tracking-[0.18em] text-primary">History</p>
                 <h3 className="mt-3 font-display text-3xl font-bold tracking-tight">{lang.history.title}</h3>

@@ -1,13 +1,13 @@
 import { StrictMode, lazy, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
 
 const Home = lazy(() => import('./pages/Home.jsx'))
 const Languages = lazy(() => import('./pages/Languages.jsx'))
 const LanguagePage = lazy(() => import('./pages/LanguagePage.jsx'))
-const Services = lazy(() => import('./pages/Services.jsx'))
+const LanguageLab = lazy(() => import('./pages/LanguageLab.jsx'))
 const About = lazy(() => import('./pages/About.jsx'))
 const Blog = lazy(() => import('./pages/Blog.jsx'))
 const BlogPost = lazy(() => import('./pages/BlogPost.jsx'))
@@ -25,7 +25,8 @@ createRoot(document.getElementById('root')).render(
             <Route index element={<Home />} />
             <Route path="languages" element={<Languages />} />
             <Route path="languages/:slug" element={<LanguagePage />} />
-            <Route path="services" element={<Services />} />
+            <Route path="language-lab" element={<LanguageLab />} />
+            <Route path="services" element={<Navigate to="/language-lab" replace />} />
             <Route path="about" element={<About />} />
             <Route path="blog" element={<Blog />} />
             <Route path="blog/:slug" element={<BlogPost />} />

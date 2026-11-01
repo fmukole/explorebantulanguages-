@@ -18,7 +18,7 @@ export default function Blog() {
         title="Tips, phrases and"
         italic="stories."
         text="Short reads to help you learn faster and understand the cultures behind the languages."
-        image="/images/culture/kwazulu-natal.jpg"
+        image="/images/blog/class.webp"
         crumbs={[{ label: 'Blog' }]}
       />
       <section className="bg-background py-16 sm:py-24">

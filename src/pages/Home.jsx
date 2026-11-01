@@ -8,7 +8,7 @@ import GreetingsCloud from '../components/GreetingsCloud'
 import SectionHeader from '../components/SectionHeader'
 import CountUp from '../components/CountUp'
 import Flag from '../components/Flag'
-import Testimonials from '../components/Testimonials'
+import RequestLanguage from '../components/RequestLanguage'
 import WorldMap from '../components/WorldMap'
 import TeacherCards from '../components/TeacherCards'
 import Research from '../components/Research'
@@ -204,7 +204,7 @@ function Cultures() {
 
 function LatestPosts() {
   return (
-    <section className="bg-surface py-24 sm:py-32">
+    <section className="bg-background py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeader eyebrow="From the blog" title="Tips, phrases and" italic="culture." />
@@ -230,11 +230,11 @@ export default function Home() {
       <LanguageGrid />
       <Pillars />
       <Protocol />
-      <Testimonials />
       <Cultures />
       <WorldMap />
       <Research />
       <TeacherCards />
+      <RequestLanguage />
       <LatestPosts />
       <CTABanner />
     </>

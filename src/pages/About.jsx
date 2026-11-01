@@ -63,6 +63,69 @@ export default function About() {
         </div>
       </section>
 
+      <section className="bg-background py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
+          <SectionHeader eyebrow="Our methodology" title="Learn the family," italic="not just the language." text="Languages that share an ancestor share patterns. We teach those patterns on purpose, so each new language you add is easier than the last." />
+
+          <div className="mt-16 grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+            <img src="/images/about/nguni.webp" alt="A man and a woman in traditional Nguni dress greeting each other" loading="lazy" className="aspect-[4/3] w-full rounded-5xl object-cover shadow-xl" />
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.18em] text-primary">The Bantu and Nguni family</p>
+              <h3 className="mt-3 font-display text-3xl font-bold tracking-tight">Zulu, Xhosa and their cousins</h3>
+              <p className="mt-4 leading-relaxed text-muted">isiZulu, isiXhosa, siSwati and the Ndebele of Zimbabwe belong to the Nguni branch of the Bantu languages. They share noun classes, verb endings and much of their vocabulary, so a learner of one can often follow the others. Swahili sits in the wider Bantu family and follows the same basic design.</p>
+              <div className="mt-6 overflow-hidden rounded-3xl border border-divider bg-surface">
+                <table className="w-full text-left text-sm">
+                  <thead className="bg-background font-mono text-[10px] uppercase tracking-[0.14em] text-muted"><tr><th className="px-4 py-3">English</th><th className="px-4 py-3">Zulu</th><th className="px-4 py-3">Xhosa</th><th className="px-4 py-3">Swahili</th></tr></thead>
+                  <tbody className="divide-y divide-divider">
+                    <tr><td className="px-4 py-3">person</td><td className="px-4 py-3 font-semibold">umuntu</td><td className="px-4 py-3 font-semibold">umntu</td><td className="px-4 py-3 font-semibold">mtu</td></tr>
+                    <tr><td className="px-4 py-3">people</td><td className="px-4 py-3 font-semibold">abantu</td><td className="px-4 py-3 font-semibold">abantu</td><td className="px-4 py-3 font-semibold">watu</td></tr>
+                    <tr><td className="px-4 py-3">water</td><td className="px-4 py-3 font-semibold">amanzi</td><td className="px-4 py-3 font-semibold">amanzi</td><td className="px-4 py-3 font-semibold">maji</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-4 text-sm leading-relaxed text-muted">The same idea, a prefix for a singular and a prefix for the plural, appears in all three. We use it to teach noun classes once and apply them everywhere.</p>
+            </div>
+          </div>
+
+          <div className="mt-20 grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+            <div className="lg:order-2">
+              <img src="/images/about/latin.webp" alt="A student at a laptop with greetings in German, Spanish, French, English and Portuguese on a chalkboard" loading="lazy" className="aspect-[4/3] w-full rounded-5xl object-cover shadow-xl" />
+            </div>
+            <div className="lg:order-1">
+              <p className="font-mono text-xs uppercase tracking-[0.18em] text-primary">The Latin family</p>
+              <h3 className="mt-3 font-display text-3xl font-bold tracking-tight">French and Portuguese, sisters of Latin</h3>
+              <p className="mt-4 leading-relaxed text-muted">French and Portuguese, like Spanish, Italian and Romanian, grew out of Latin. Their verbs, genders and many everyday words match, so we teach them as a pair. English joins the circle through its large French and Latin vocabulary.</p>
+              <div className="mt-6 overflow-hidden rounded-3xl border border-divider bg-surface">
+                <table className="w-full text-left text-sm">
+                  <thead className="bg-background font-mono text-[10px] uppercase tracking-[0.14em] text-muted"><tr><th className="px-4 py-3">Latin</th><th className="px-4 py-3">French</th><th className="px-4 py-3">Portuguese</th><th className="px-4 py-3">Spanish</th></tr></thead>
+                  <tbody className="divide-y divide-divider">
+                    <tr><td className="px-4 py-3">aqua</td><td className="px-4 py-3 font-semibold">eau</td><td className="px-4 py-3 font-semibold">água</td><td className="px-4 py-3 font-semibold">agua</td></tr>
+                    <tr><td className="px-4 py-3">nox</td><td className="px-4 py-3 font-semibold">nuit</td><td className="px-4 py-3 font-semibold">noite</td><td className="px-4 py-3 font-semibold">noche</td></tr>
+                    <tr><td className="px-4 py-3">lingua</td><td className="px-4 py-3 font-semibold">langue</td><td className="px-4 py-3 font-semibold">língua</td><td className="px-4 py-3 font-semibold">lengua</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-4 text-sm leading-relaxed text-muted">Spotting the shared root is often the fastest way to remember a word, and to know how it will be spelled.</p>
+            </div>
+          </div>
+
+          <div className="mt-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              ['Sound first', 'You hear and say a language before you analyse it.'],
+              ['Patterns before rules', 'We show you the pattern, then name the rule.'],
+              ['Compare across the family', 'Noun classes in Bantu, gender and verbs in Latin languages: learn once, use again.'],
+              ['Real situations', 'Greetings, markets, work and family, with examples from where you will use the language.'],
+            ].map(([t, d], i) => (
+              <div key={t} className="rounded-4xl border border-divider bg-surface p-6">
+                <span className="font-mono text-xs text-primary">0{i + 1}</span>
+                <h4 className="mt-3 font-display text-xl font-bold tracking-tight">{t}</h4>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-surface py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
           <SectionHeader eyebrow="How we teach" title="Four" italic="principles." />

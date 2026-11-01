@@ -4,6 +4,7 @@ import { feature } from 'topojson-client'
 import world from 'world-atlas/countries-110m.json'
 import SectionHeader from './SectionHeader'
 import { languages } from '../data/languages'
+import { buildCoverage } from '../data/coverage'
 
 const W = 960
 const H = 500
@@ -16,20 +17,13 @@ const pathGen = geoPath(projection)
 const shapes = features.map((f) => ({ id: Number(f.id), name: f.properties.name, d: pathGen(f) }))
 const sphere = pathGen({ type: 'Sphere' })
 
-// country id -> { name, langs, lonlat? } built from the language data
-const covered = new Map()
-languages.forEach((l) => {
-  l.countries.forEach((c) => {
-    const entry = covered.get(c.id) || { id: c.id, name: c.name, langs: [], lonlat: c.lonlat }
-    entry.langs.push(l)
-    covered.set(c.id, entry)
-  })
-})
+// country id -> { name, langs, lonlat? } for every country our languages reach
+const covered = buildCoverage()
 const patternId = (ls) => `stripe-${ls.map((l) => l.slug).join('-')}`
 const stripeCombos = Array.from(new Map(Array.from(covered.values()).filter((e) => e.langs.length > 1).map((e) => [patternId(e.langs), e.langs])).entries())
 const markers = Array.from(covered.values()).filter((e) => e.lonlat).map((e) => ({ ...e, xy: projection(e.lonlat) }))
 
-export default function WorldMap() {
+export default function WorldMap({ dark = true, eyebrow = 'Our world', id }) {
   const [active, setActive] = useState(null)
   const [hover, setHover] = useState(null)
   const total = covered.size
@@ -48,9 +42,9 @@ export default function WorldMap() {
   }, [hover])
 
   return (
-    <section className="bg-deep py-24 sm:py-32">
+    <section id={id} className="bg-deep py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
-        <SectionHeader dark eyebrow="Our world" title={`${total} countries,`} italic="six languages." text="Each colour is one of our languages. Countries with stripes speak more than one of them. Pick a language below to see only its countries." />
+        <SectionHeader dark eyebrow={eyebrow} title={`${total} countries,`} italic="six languages." text="Each colour is one of our languages. Countries with stripes use more than one of them. Pick a language below to see only its countries." />
 
         <div className="mt-10 flex flex-wrap gap-2" role="group" aria-label="Filter the map by language">
           <button
@@ -110,11 +104,11 @@ export default function WorldMap() {
               const on = langsFor(m).length > 0
               return (
                 <circle
-                  key={m.name}
+                  key={m.id}
                   cx={m.xy[0]}
                   cy={m.xy[1]}
                   r="5"
-                  fill={on ? fillFor(m) : BASE}
+                  fill={on ? (langsFor(m).length > 1 ? langsFor(m)[0].color : fillFor(m)) : BASE}
                   stroke="#FFFFFF"
                   strokeWidth="1.2"
                   className={on ? 'cursor-pointer' : ''}
@@ -131,7 +125,7 @@ export default function WorldMap() {
 
         <p className="mt-4 min-h-[1.5rem] font-mono text-xs uppercase tracking-[0.14em] text-accent" aria-live="polite">{caption}</p>
         <p className="mt-2 max-w-3xl text-xs leading-relaxed text-white/50">
-          The countries shown are those featured on our language pages. Each language is spoken in more places than this map can show.
+          Countries where the language is official or the main shared language. Each language is also used in more places than this map can show.
         </p>
         <ul className="sr-only">
           {Array.from(covered.values()).map((e) => (<li key={e.id}>{e.name}: {e.langs.map((l) => l.name).join(', ')}</li>))}

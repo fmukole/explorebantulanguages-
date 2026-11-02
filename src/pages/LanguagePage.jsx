@@ -13,6 +13,7 @@ import Flag from '../components/Flag'
 import CTABanner from '../components/CTABanner'
 import NotFound from './NotFound'
 import { languages, getLanguage } from '../data/languages'
+import { site } from '../data/site'
 
 export default function LanguagePage() {
   const { slug } = useParams()
@@ -22,7 +23,21 @@ export default function LanguagePage() {
 
   return (
     <>
-      <Seo title={`Learn ${lang.name}`} description={`${lang.name} (${lang.native}) lessons at Beginner, Intermediate and Advanced level. ${lang.tagline}`} />
+      <Seo
+        title={`Learn ${lang.name} in Cape Town`}
+        description={`${lang.name} (${lang.native}) lessons at Beginner, Intermediate and Advanced level. ${lang.tagline}`}
+        image={lang.heroImage || lang.photos[0].src}
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'Course',
+          name: `${lang.name} (${lang.native}) lessons`,
+          description: lang.intro,
+          inLanguage: 'en',
+          teaches: lang.name,
+          provider: { '@type': 'EducationalOrganization', name: site.name, url: site.url },
+          hasCourseInstance: ['Beginner', 'Intermediate', 'Advanced'].map((level) => ({ '@type': 'CourseInstance', name: `${lang.name} ${level}`, courseMode: ['onsite', 'online'] })),
+        }}
+      />
       <PageHero
         key={lang.slug}
         tint={lang.color}

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Phone, MapPin, MessageCircle } from 'lucide-react'
+import { Phone, MapPin, MessageCircle, Mail } from 'lucide-react'
 import { site, nav } from '../data/site'
 import { languages } from '../data/languages'
 import { Logo } from './Navbar'
@@ -24,24 +24,25 @@ export default function Footer() {
             <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.18em] text-accent">Languages</p>
             <ul className="space-y-2.5 text-sm text-white/70">
               {languages.map((l) => (
-                <li key={l.slug}><Link className="hover:text-white" to={`/languages/${l.slug}`}>{l.name} <span className="font-serif italic text-white/40">{l.native}</span></Link></li>
+                <li key={l.slug}><Link className="inline-flex min-h-[44px] items-center hover:text-white sm:min-h-0" to={`/languages/${l.slug}`}>{l.name} <span className="font-serif italic text-white/40">{l.native}</span></Link></li>
               ))}
             </ul>
           </div>
           <div>
             <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.18em] text-accent">Explore</p>
             <ul className="space-y-2.5 text-sm text-white/70">
-              {nav.map((n) => (<li key={n.to}><Link className="hover:text-white" to={n.to}>{n.label}</Link></li>))}
-              <li><Link className="hover:text-white" to="/privacy">Privacy policy</Link></li>
-              <li><Link className="hover:text-white" to="/terms">Terms</Link></li>
+              {nav.map((n) => (<li key={n.to}><Link className="inline-flex min-h-[44px] items-center hover:text-white sm:min-h-0" to={n.to}>{n.label}</Link></li>))}
+              <li><Link className="inline-flex min-h-[44px] items-center hover:text-white sm:min-h-0" to="/privacy">Privacy policy</Link></li>
+              <li><Link className="inline-flex min-h-[44px] items-center hover:text-white sm:min-h-0" to="/terms">Terms</Link></li>
             </ul>
           </div>
           <div>
             <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.18em] text-accent">Contact</p>
             <ul className="space-y-3 text-sm text-white/70">
               <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" /> {site.location}</li>
-              <li><a className="flex items-center gap-2 hover:text-white" href={`tel:${site.phoneTel}`}><Phone className="h-4 w-4 text-accent" /> {site.phone}</a></li>
-              <li><a className="flex items-center gap-2 hover:text-white" href={site.whatsapp} target="_blank" rel="noreferrer"><MessageCircle className="h-4 w-4 text-accent" /> WhatsApp</a></li>
+              <li><a className="flex items-center gap-2 inline-flex min-h-[44px] items-center hover:text-white sm:min-h-0" href={`tel:${site.phoneTel}`}><Phone className="h-4 w-4 text-accent" /> {site.phone}</a></li>
+              {site.email && (<li><a className="flex items-center gap-2 break-all inline-flex min-h-[44px] items-center hover:text-white sm:min-h-0" href={`mailto:${site.email}`}><Mail className="h-4 w-4 shrink-0 text-accent" /> {site.email}</a></li>)}
+              <li><a className="flex items-center gap-2 inline-flex min-h-[44px] items-center hover:text-white sm:min-h-0" href={site.whatsapp} target="_blank" rel="noreferrer"><MessageCircle className="h-4 w-4 text-accent" /> WhatsApp</a></li>
             </ul>
           </div>
         </div>

@@ -22,11 +22,11 @@ export default function PageHero({ eyebrow, title, italic, text, image, crumbs =
       <GreetingsCloud className="hidden sm:block opacity-60" />
       <div className="relative z-10 mx-auto flex min-h-[56dvh] max-w-7xl flex-col justify-end px-6 pb-14 pt-36 sm:px-10 lg:px-16">
         <nav aria-label="Breadcrumb" className="ph-in mb-6 flex flex-wrap items-center gap-1 font-mono text-[10px] uppercase tracking-[0.18em] text-white/60 sm:text-xs">
-          <Link to="/" className="hover:text-white">Home</Link>
+          <Link to="/" className="inline-block py-2 hover:text-white">Home</Link>
           {crumbs.map((c) => (
             <span key={c.label} className="flex items-center gap-1">
               <ChevronRight className="h-3 w-3" />
-              {c.to ? <Link to={c.to} className="hover:text-white">{c.label}</Link> : <span className="text-white">{c.label}</span>}
+              {c.to ? <Link to={c.to} className="inline-block py-2 hover:text-white">{c.label}</Link> : <span className="text-white">{c.label}</span>}
             </span>
           ))}
         </nav>

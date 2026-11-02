@@ -6,11 +6,11 @@ export const site = {
   description:
     'Language lessons in Swahili, French, Zulu, Xhosa, Portuguese and English, with Beginner, Intermediate and Advanced courses, short videos and the cultures behind each language.',
   location: 'Cape Town, South Africa',
-  // TODO(owner): confirm the phone number and add a lessons email address.
-  phone: '078 668 9387',
-  phoneTel: '+27786689387',
-  whatsapp: 'https://wa.me/27786689387',
-  email: '',
+  url: 'https://explorebantulanguages.vercel.app', // change this when the site gets its own domain
+  phone: '072 821 8434',
+  phoneTel: '+27728218434',
+  whatsapp: 'https://wa.me/27728218434',
+  email: 'bezaltrade@gmail.com',
   hours: 'Lessons by arrangement. Weekday full-time courses run 8AM to 3PM.',
 }
 

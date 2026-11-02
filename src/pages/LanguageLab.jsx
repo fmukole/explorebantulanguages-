@@ -22,7 +22,7 @@ const services = [
     ],
     quoteText: 'interpretation',
     photo: '/images/lab/interpretation.webp',
-    photoAlt: 'Two people talking across languages in a café, with speech bubbles in Spanish and Portuguese',
+    photoAlt: 'An interpreter wearing a headset speaks to a room while colleagues work behind him',
   },
   {
     id: 'translation',
@@ -36,7 +36,7 @@ const services = [
     ],
     quoteText: 'translation',
     photo: '/images/lab/translation.webp',
-    photoAlt: 'Two people studying a book with French and English words side by side',
+    photoAlt: 'Three colleagues with headsets reviewing documents together at a desk',
   },
   {
     id: 'transcription',
@@ -70,7 +70,20 @@ function Pair({ p }) {
 export default function LanguageLab() {
   return (
     <>
-      <Seo title="Language Lab" description="Interpretation, translation and transcription in French, English, Swahili and Portuguese, from Cape Town. Ask for a quote." />
+      <Seo title="Language Lab" description="Interpretation, translation and transcription in French, English, Swahili and Portuguese, from Cape Town. Ask for a quote."
+        image="/images/lab/translation.webp"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'ProfessionalService',
+          name: 'Explore Bantu Languages: Language Lab',
+          url: `${site.url}/language-lab`,
+          telephone: '+27728218434',
+          email: 'bezaltrade@gmail.com',
+          areaServed: 'Worldwide',
+          address: { '@type': 'PostalAddress', addressLocality: 'Cape Town', addressCountry: 'ZA' },
+          makesOffer: ['Interpretation', 'Translation', 'Transcription'].map((n) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: n } })),
+        }}
+      />
       <PageHero
         eyebrow="Language Lab"
         title="Interpretation, translation"

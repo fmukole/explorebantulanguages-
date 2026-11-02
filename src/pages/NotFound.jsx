@@ -5,7 +5,7 @@ import PageHero from '../components/PageHero'
 export default function NotFound() {
   return (
     <>
-      <Seo title="Page not found" />
+      <Seo title="Page not found" noindex />
       <PageHero eyebrow="Error 404" title="This page" italic="got lost in translation." text="The page you are looking for does not exist. Try one of these instead.">
         <div className="flex flex-wrap gap-3">
           <Link to="/" className="magnetic-btn rounded-full bg-primary px-6 py-3 font-semibold text-white">Home</Link>

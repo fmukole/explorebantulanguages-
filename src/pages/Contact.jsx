@@ -1,4 +1,4 @@
-import { Phone, MapPin, Clock, MessageCircle } from 'lucide-react'
+import { Phone, MapPin, Clock, MessageCircle, Mail } from 'lucide-react'
 import Seo from '../components/Seo'
 import PageHero from '../components/PageHero'
 import ContactForm from '../components/ContactForm'
@@ -9,6 +9,7 @@ export default function Contact() {
   const cards = [
     { icon: Phone, label: 'Call', value: site.phone, href: `tel:${site.phoneTel}` },
     { icon: MessageCircle, label: 'WhatsApp', value: 'Message us', href: site.whatsapp },
+    { icon: Mail, label: 'Email', value: site.email, href: `mailto:${site.email}` },
     { icon: MapPin, label: 'Where', value: site.location },
     { icon: Clock, label: 'Lesson times', value: site.hours },
   ]

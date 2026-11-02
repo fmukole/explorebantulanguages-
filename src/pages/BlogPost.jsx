@@ -6,6 +6,7 @@ import BlogCard, { formatDate } from '../components/BlogCard'
 import CTABanner from '../components/CTABanner'
 import NotFound from './NotFound'
 import { posts, getPost } from '../data/posts'
+import { site } from '../data/site'
 
 export default function BlogPost() {
   const { slug } = useParams()
@@ -18,7 +19,23 @@ export default function BlogPost() {
 
   return (
     <>
-      <Seo title={post.title} description={post.excerpt} />
+      <Seo
+        title={post.title}
+        description={post.excerpt}
+        image={post.cover}
+        type="article"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: post.title,
+          description: post.excerpt,
+          image: `${site.url}${post.cover}`,
+          datePublished: post.date,
+          author: { '@type': 'Organization', name: site.name },
+          publisher: { '@type': 'Organization', name: site.name, url: site.url },
+          mainEntityOfPage: `${site.url}/blog/${post.slug}`,
+        }}
+      />
       <PageHero
         eyebrow={`${post.category} · ${formatDate(post.date)} · ${post.readTime}`}
         title={post.title}
